@@ -12,16 +12,20 @@ int main() {
 	cout << "'-' para resta\n";
 	cout << "'*' para multiplicación\n";
 	cout << "'/' para división\n";
+	cout << "'F' para factorial del numero:";
 	cout << "Por favor solo seleccione una: ";
-	cout << "Corrección del punto f) hecha ";
+	
 	cin >> operacion;
 	
-	// Solicitar al usuario los dos números
+	if (operacion != 'F'){
 	cout << "Ingrese el primer número: ";
 	cin >> num1;
 	cout << "Ingrese el segundo número: ";
 	cin >> num2;
-	
+	}
+	else {
+		cin >> num1;
+	}
 	// Realizar la operación seleccionada
 	switch (operacion) {
 	case '+':
@@ -43,6 +47,15 @@ int main() {
 		} else {
 			cout << "Error: No se puede dividir por 0." << endl;
 		}
+		break;
+	case 'F': 
+		resultado = num1;
+		
+		for (int i=1;i<num1; i++){
+			resultado = resultado * (num1-i);
+			cout << resultado << endl;
+		}
+		cout << "El resultado del factorial es: " << resultado << endl;
 		break;
 	default:
 		cout << "Operación no válida." << endl;
