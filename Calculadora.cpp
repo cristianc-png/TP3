@@ -12,6 +12,7 @@ int main() {
 	cout << "'-' para resta\n";
 	cout << "'*' para multiplicación\n";
 	cout << "'/' para división\n";
+	cout << "Por favor solo seleccione una: ";
 	cin >> operacion;
 	
 	// Solicitar al usuario los dos números
