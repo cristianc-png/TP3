@@ -13,6 +13,7 @@ int main() {
 	cout << "'*' para multiplicación\n";
 	cout << "'/' para división\n";
 	cout << "Por favor solo seleccione una: ";
+	cout << "Esto es una modificacion d) ";
 	cin >> operacion;
 	
 	// Solicitar al usuario los dos números
